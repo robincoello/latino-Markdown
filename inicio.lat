@@ -5,10 +5,29 @@ separo por lineas
 Cojo la primera linea y veo si corresponde a alguna regla conocida 
     si corresponde aplico y salgo 
 
+Casos posibles
+---------------
+// Estos son los casos donde solo verificoo el inicio de la frase
+header [1-6]
+listas [numerica, no numeria]
+cita
+linea
 
+// En estos casos debo verificar el inicio y el final
+italico
+grueso
+subrayado
+codigo
+
+
+// Estos casos debo verificar una extructura 
+tabla
+url [interna,externa]
+imagen
+
+// y esto es por defecto si no hay ningun caso anterior
+parrafo
 */
-
-
 
 texto = '######titulo'
 
@@ -49,5 +68,44 @@ elegir(c)
     defecto:
         escribir("<p>".sm."</p>")
 fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
