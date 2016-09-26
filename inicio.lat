@@ -1,4 +1,6 @@
 texto = '**titulo'
+
+
 // header
 // con esto cuento cuantas almoadillas tiene la frase al principio y entrego el resultado
 // si entrega de 1 a 6 es un header
@@ -11,6 +13,8 @@ funcion verificar_header(texto)
     fin    
     retorno contador
 fin
+
+
 // cita
 // si hay una '>' al inicio es una cita
 funcion verificar_cita(texto)
@@ -46,12 +50,13 @@ f = longitud(texto)
         retorno 0
     fin
 fin
+
 // Grueso
 funcion verificar_grueso(texto)
 
 l = longitud(texto)
 
-    si( (texto[0] == 'r*' && texto[1] == 'rr' ) && ( texto[l-1] == '*e' && texto[l-2] == '*ee') )
+    si( (texto[0] == '*' && texto[1] == '*' ) && ( texto[l-1] == '*' && texto[l-2] == '*') )
         retorno 1
     sino
         retorno 0
