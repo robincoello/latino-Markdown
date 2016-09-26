@@ -1,3 +1,5 @@
+Reglas
+
 
 # header 1
 ## header 2
@@ -6,7 +8,7 @@
 ##### header 5
 ######  header 6
 
-Parrafo
+Parrafo: es una linea de texto sin ningun caso 
 
 *italico*
 **graso**
@@ -26,15 +28,15 @@ Lista numerica
 > Una cita 
 
 
-
-
-Una tabla 
+Una tabla (dos lineas y dos culumnas
 | 0:0 | 1:0 |
 | -- | -- |
 | 0:2 | 1:2 |
 
-Linea horizotal
+Para crear una linea horizonta horizotal
 ---
+
+
 url
 [mande.ec](http://www.mande.ec)
 
@@ -44,7 +46,6 @@ imagen
 Codigo 
 ``` Codigo ``` 
 
-$$Expresioin matematica$$
 
 
 
