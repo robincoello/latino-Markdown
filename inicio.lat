@@ -36,8 +36,29 @@ funcion verificar_linea(texto)
     fin
 
 fin
-/// lista numerica 
-/// lista no numerica 
+
+/// lista 
+funcion verificar_lista(texto)
+l = longitud(texto)
+    si( ( texto[0] == '*'  && texto[l-1] != '*'  )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+// lista numerica
+funcion verificar_lista_numerica(texto)
+l = longitud(texto)
+
+    si( (texto[0] == '*' && texto[1] == '.' ) &&  texto[l-1] != '*' )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+
 
 /// Inclinado 
 funcion verificar_inclinado(texto)
@@ -63,6 +84,19 @@ l = longitud(texto)
     fin
 fin
 
+// subrayado
+funcion verificar_subrayado(texto)
+l = longitud(texto)
+
+    si( (texto[0] == '-' && texto[1] == '-' ) && ( texto[l-1] == '-' && texto[l-2] == '-' ) )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+
+
 escribir('********** al indice dos' . texto[2])
 
 escribir(longitud(texto))
@@ -83,7 +117,6 @@ fin
 
 
 
-///Grueso
 /// Subrayado  
 /// Codigo 
 
