@@ -1,0 +1,53 @@
+/*
+Cargo documento en una variable, 
+
+separo por lineas
+Cojo la primera linea y veo si corresponde a alguna regla conocida 
+    si corresponde aplico y salgo 
+
+
+*/
+
+
+
+texto = '######titulo'
+
+// con esto cuento cuantas almoadillas tiene la frase al principio y entrego el resultado
+
+funcion verificar_caso(texto)
+    contador = 0
+    i = 0
+    mientras texto[i] == '#'
+        contador++
+        i++
+    fin    
+    retorno contador
+fin
+
+
+funcion quitar_marcas(texto)
+    retorno texto
+fin
+
+c  = verificar_caso(texto)
+sm = quitar_marcas(texto)
+
+
+elegir(c)
+    caso 1:
+        escribir("<h1>".sm."</h1>")
+    caso 2:
+        escribir("<h2>".sm."</h2>")
+    caso 3:
+        escribir("<h3>".sm."</h3>")
+    caso 4:
+        escribir("<h4>".sm."</h4>")
+    caso 5:
+        escribir("<h5>".sm."</h5>")
+    caso 6:
+        escribir("<h6>".sm."</h6>")
+    defecto:
+        escribir("<p>".sm."</p>")
+fin
+
+
