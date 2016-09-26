@@ -1,39 +1,8 @@
-/*
-Cargo documento en una variable, 
-
-separo por lineas
-Cojo la primera linea y veo si corresponde a alguna regla conocida 
-    si corresponde aplico y salgo 
-
-Casos posibles
----------------
-// Estos son los casos donde solo verificoo el inicio de la frase
-header [1-6]
-listas [numerica, no numeria]
-cita
-linea
-
-// En estos casos debo verificar el inicio y el final
-italico
-grueso
-subrayado
-codigo
-
-
-// Estos casos debo verificar una extructura 
-tabla
-url [interna,externa]
-imagen
-
-// y esto es por defecto si no hay ningun caso anterior
-parrafo
-*/
-
-texto = '######titulo'
-
+texto = '**titulo'
+// header
 // con esto cuento cuantas almoadillas tiene la frase al principio y entrego el resultado
-
-funcion verificar_caso(texto)
+// si entrega de 1 a 6 es un header
+funcion verificar_header(texto)
     contador = 0
     i = 0
     mientras texto[i] == '#'
@@ -42,13 +11,116 @@ funcion verificar_caso(texto)
     fin    
     retorno contador
 fin
+// cita
+// si hay una '>' al inicio es una cita
+funcion verificar_cita(texto)
+
+    si(empieza_con(texto,'>'))
+        retorno 1 // verdadero
+    sino
+        retorno 0 // falso
+    fin
+
+fin
+// linea
+// si hay trs lineas es una linea horizontal <hr>
+funcion verificar_linea(texto)
+    si(empieza_con(texto,'---'))
+        retorno 1 // verdadero
+    sino
+        retorno 0 // falso
+    fin
+
+fin
+/// lista numerica 
+/// lista no numerica 
+
+/// Inclinado 
+funcion verificar_inclinado(texto)
+
+f = longitud(texto)
+
+    si( (texto[0] == '*' && texto[1] != '*' ) && ( texto[f-1] == '*' && texto[f-2] != '*') )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+// Grueso
+funcion verificar_grueso(texto)
+
+l = longitud(texto)
+
+    si( (texto[0] == 'r*' && texto[1] == 'rr' ) && ( texto[l-1] == '*e' && texto[l-2] == '*ee') )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+escribir('********** al indice dos' . texto[2])
+
+escribir(longitud(texto))
+
+si(verificar_inclinado(texto))
+    escribir('Es inclinado')
+    
+sino
+    escribir('No es inclinado')
+fin
+
+si(verificar_grueso(texto))
+    escribir('Es grueso ** ')
+sino
+    escribir('No es grueso')
+fin
+
+
+
+
+///Grueso
+/// Subrayado  
+/// Codigo 
+
+
+
+
+
+
+
+si(verificar_linea(texto))
+    escribir('Es una linea')
+sino
+    escribir('No es linea')
+fin
+
+si(verificar_cita(texto))
+    escribir('Es una cita')
+sino
+    escribir('No es cita')
+fin
+
+
+
+
+
+
+// verifica si es una linea
+
+si(verificar_header(texto))
+    escribir('es un header')
+sino 
+    escribir('No es header')
+fin
+
+
 
 
 funcion quitar_marcas(texto)
     retorno texto
 fin
 
-c  = verificar_caso(texto)
+c  = verificar_header(texto)
 sm = quitar_marcas(texto)
 
 
