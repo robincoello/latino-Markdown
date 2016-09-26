@@ -19,7 +19,8 @@ Parrafo: es una linea de texto sin ningun caso
 
 *italico*
 **graso**
---subrayado--
+--tachado--
+__subrayado__
 
 Lista sin numeros 
 *item1
@@ -52,17 +53,9 @@ imagen
 
 Codigo 
 ``` Codigo ``` 
-
-
-
-
-
-
-
-
-
-
-
+``` 
+Codigo
+ ``` 
 
 
 
