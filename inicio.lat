@@ -1,0 +1,19 @@
+// cojo un texto
+
+// pago por el generador 
+
+
+// y creo el doculento html
+
+contenido = leer_archivo('modelo_cabeza.html')
+
+
+contenido .= ' <p>Este es un parrafo</p>'
+
+
+
+contenido .= leer_archivo('modelo_pie.html')
+
+
+
+escribir_archivo("doc.html",contenido)
