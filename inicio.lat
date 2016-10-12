@@ -6,9 +6,9 @@ texto = '#Documentacion de latino'
 
 contenido = leer_archivo('modelo_cabeza.html')
 
-r = generador(texto)
+tipo = "tachado"
 
-elegir(r)
+elegir(tipo)
     caso 'h1':        
         contenido .= '<h1>'.texto.'</h1>' 
     caso 'h2':
@@ -21,6 +21,24 @@ elegir(r)
         contenido .= '<h5>'.texto.'</h5>' 
     caso 'h6':
         contenido .= '<h6>'.texto.'</h6>' 
+    caso 'inclinado':
+        contenido .= '<i>'.texto.'</i>' 
+    caso 'grueso':
+        contenido .= '<b>'.texto.'</b>' 
+    caso 'subrayado':
+        contenido .= '<u>'.texto.'</u>' 
+    caso 'tachado': 
+        contenido .= '<strike>'.texto.'</strike>' 
+    caso 'cita': 
+        contenido .= '<blockquote>'.texto.'</blockquote>' 
+    caso 'linea':
+        contenido .= '<hr>' 
+    caso 'url':
+        contenido .= '<a href="url">web</a>' 
+    caso 'imagen':
+        contenido .= '<img src="foto.jpg">' 
+    caso 'codigo': 
+        contenido .= '<img src="foto.jpg">' 
     defecto:
         contenido .= '<p>'.texto.'</p>'
 fin

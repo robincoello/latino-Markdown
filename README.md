@@ -1,4 +1,9 @@
-Este es un Markdown hecho con latino
+#Este es un Markdown hecho con latino
+
+La idea es escribir un texto de una forma simple y que el sistema lo transforme en un formato 
+adecuado ya sea para la web, pdf u otro.
+
+
 
 Requiere
 * Latino 
@@ -54,6 +59,8 @@ imagen
 Codigo 
 ``` Codigo ``` 
 ``` 
+
+
 Codigo
  ``` 
 

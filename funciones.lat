@@ -1,18 +1,19 @@
 
 
-funcion generador(texto)
-    // aca verificamos que caso es
-    
-    vc = verificar_titulo(texto)
+funcion tipo_contenido(texto)
 
-    si( vc > 0 && vc < 7 )
-        retorno 'h' . vc 
+    // mientra no encuentre el tipo seguimos buscando
+
+    tipo = 0    
+    mientras tipo < 200
+        
+        si(verificar_titulo(texto) ) 
+            tipo = verificar_titulo(texto) 
+        fin 
+        
     fin
-
-
+    retorno tipo
 fin
-
-
 
 
 
@@ -21,6 +22,7 @@ fin
 // header
 // con esto cuento cuantas almoadillas tiene la frase al principio y entrego el resultado
 // si entrega de 1 a 6 es un header
+
 funcion verificar_titulo(texto)
     contador = 0
     i = 0

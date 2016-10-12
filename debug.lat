@@ -1,0 +1,8 @@
+a = 'demo'
+
+
+si(a)
+    escribir("verdadero")
+sino
+    escribiro('falseo')
+fin
