@@ -8,7 +8,7 @@ si(a == 1 && b == 1)
     escribir('Si')
 fin
 
-texto = '__Documentacion de latino__'
+texto = 'Documentación de latino'
 
 
 

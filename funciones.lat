@@ -139,6 +139,9 @@ fin
 
 
 
+
+
+
 // con esto convierto el texto en html
 
 funcion texto_formateado(texto,tipo)
@@ -146,27 +149,38 @@ funcion texto_formateado(texto,tipo)
 contenido = ''
 
     elegir(tipo)
-        caso 'h1':        
+        caso 'h1': 
+            texto = subcadena(texto,1,longitud(texto)-2)
             contenido .= '<h1>'.texto.'</h1>' 
         caso 'h2':
+            texto = subcadena(texto,2,longitud(texto)-4)
             contenido .= '<h2>'.texto.'</h2>' 
         caso 'h3':
+            texto = subcadena(texto,4,longitud(texto)-7)
             contenido .= '<h3>'.texto.'</h3>' 
         caso 'h4':
+            texto = subcadena(texto,5,longitud(texto)-9)
             contenido .= '<h4>'.texto.'</h4>' 
         caso 'h5':
+            texto = subcadena(texto,6,longitud(texto)-11)
             contenido .= '<h5>'.texto.'</h5>' 
         caso 'h6':
+            texto = subcadena(texto,7,longitud(texto)-13)
             contenido .= '<h6>'.texto.'</h6>' 
         caso 'inclinado':
+            texto = subcadena(texto,1,longitud(texto)-2)
             contenido .= '<i>'.texto.'</i>' 
         caso 'grueso':
+            texto = subcadena(texto,2,longitud(texto)-4)
             contenido .= '<b>'.texto.'</b>' 
         caso 'subrayado':
+            texto = subcadena(texto,2,longitud(texto)-4)
             contenido .= '<u>'.texto.'</u>' 
         caso 'tachado': 
+            texto = subcadena(texto,2,longitud(texto)-4)
             contenido .= '<strike>'.texto.'</strike>' 
         caso 'cita': 
+            texto = subcadena(texto,1,longitud(texto))
             contenido .= '<blockquote>'.texto.'</blockquote>' 
         caso 'linea':
             contenido .= '<hr>'.texto.'' 
