@@ -27,6 +27,18 @@ Parrafo: es una linea de texto sin ningun caso
 --tachado--
 __subrayado__
 
+
+> Una cita 
+
+codigo ```
+
+```
+
+
+
+
+```
+
 Lista sin numeros 
 *item1
 *item2
@@ -38,7 +50,6 @@ Lista numerica
 2.item
 3.item
 
-> Una cita 
 
 
 Una tabla (dos lineas y dos culumnas
@@ -62,11 +73,17 @@ Codigo
 https://www.youtube.com/watch?v=NLPO-0rtD-o&feature=youtu.be
 
 
+##Instrucciones
+Escribir tu documentación en ```libro.lat``` (por el momento solo funciona textos de una sola linea
 
-Codigo
- ``` 
-
-
-
+Después ejecuta lo siguiente: 
 
 ```
+latino inicio.lat
+```
+
+Y se creara un archivo doc.html 
+
+
+
+
