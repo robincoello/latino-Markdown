@@ -12,6 +12,11 @@ funcion tipo_contenido(texto)
     si(es_titulo(texto)==6) tipo = 'h6' fin
     si(es_cita(texto))      tipo = 'cita' fin
     si(es_linea(texto))     tipo = 'linea' fin
+    si(es_inclinado(texto)) tipo = 'inclinado' fin
+    si(es_grueso(texto))    tipo = 'grueso' fin
+    si(es_tachado(texto))   tipo = 'tachado' fin
+    si(es_subrayado(texto)) tipo = 'subrayado' fin
+    si(es_codigo(texto))    tipo = 'codigo' fin
        
     retorno tipo
  
@@ -50,20 +55,90 @@ funcion es_cita(texto)
     sino
         retorno 0 
     fin
-
 fin
 
 // linea
-// si hay tres lineas es una linea horizontal <hr>
+// si hay tres lineas es una linea horizontal '<hr>'
 funcion es_linea(texto)
     si(empieza_con(texto,'---'))
         retorno 1
     sino
         retorno 0
     fin
-
 fin
 
+// es inclinado?
+funcion es_inclinado(texto) 
+    si(empieza_con(texto,'*') && termina_con(texto,'*'))
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+// es grueso?
+funcion es_grueso(texto) 
+    si(empieza_con(texto,'**') && termina_con(texto,'**'))
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+// es tachado?
+funcion es_tachado(texto) 
+    si(empieza_con(texto,'--') && termina_con(texto,'--'))
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+// es subrayado?
+funcion es_subrayado(texto) 
+    si(empieza_con(texto,'__') && termina_con(texto,'__'))
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+// es codigo?
+funcion es_codigo(texto) 
+    si(empieza_con(texto,'```') && termina_con(texto,'```'))
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// con esto convierto el texto en html
 
 funcion texto_formateado(texto,tipo)
 

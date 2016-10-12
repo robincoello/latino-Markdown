@@ -1,6 +1,6 @@
 incluir('funciones.lat')
 
-texto = 'Documentacion de latino'
+texto = '__Documentacion de latino__'
 
 tipo = tipo_contenido(texto)
 

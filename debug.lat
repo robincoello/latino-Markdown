@@ -1,21 +1,7 @@
-funcion es_titulo(texto)
-    contador = 0
-    i = 0
-    mientras texto[i] == '#'        
-        contador++
-        i++
-    fin   
-    
-    si(contador < 7)
-        retorno contador
-    sino
-        retorno 0    
-    fin
- 
-fin
+texto = "<i>22222Inclinado</i>"
 
-si(es_titulo('###n')== 1)
-    escribir('Es h1')
-fin
 
+si(empieza_con(texto,'<i>') && termina_con(texto,'</i>'))
+    escribir('inclinado')
+fin
 
