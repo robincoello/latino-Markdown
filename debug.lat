@@ -1,7 +1,52 @@
-texto = "<i>22222Inclinado</i>"
 
 
-si(empieza_con(texto,'<i>') && termina_con(texto,'</i>'))
-    escribir('inclinado')
+
+// lista numerica
+funcion verificar_lista_numerica(texto)
+l = longitud(texto)
+
+    si( (texto[0] == '*' && texto[1] == '.' ) &&  texto[l-1] != '*' )
+        retorno 1
+    sino
+        retorno 0
+    fin
 fin
 
+
+
+/// Inclinado 
+funcion verificar_inclinado(texto)
+
+f = longitud(texto)
+
+    si( (texto[0] == '*' && texto[1] != '*' ) && ( texto[f-1] == '*' && texto[f-2] != '*') )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+// Grueso
+funcion verificar_grueso(texto)
+
+l = longitud(texto)
+
+    si( (texto[0] == '*' && texto[1] == '*' ) && ( texto[l-1] == '*' && texto[l-2] == '*') )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+// subrayado
+funcion verificar_subrayado(texto)
+l = longitud(texto)
+
+    si( (texto[0] == '-' && texto[1] == '-' ) && ( texto[l-1] == '-' && texto[l-2] == '-' ) )
+        retorno 1
+    sino
+        retorno 0
+    fin
+fin
+
+*/

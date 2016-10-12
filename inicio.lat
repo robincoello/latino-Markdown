@@ -1,15 +1,21 @@
 incluir('funciones.lat')
 
+
+a = 1
+b = 1
+
+si(a == 1 && b == 1)
+    escribir('Si')
+fin
+
 texto = '__Documentacion de latino__'
 
+
+
+
 tipo = tipo_contenido(texto)
-
-
-
 contenido  = leer_archivo('modelo_cabeza.html')
 contenido .= texto_formateado(texto,tipo)
 contenido .= leer_archivo('modelo_pie.html')
-
 escribir(contenido)
-
 escribir_archivo("doc.html",contenido)

@@ -102,6 +102,7 @@ funcion es_subrayado(texto)
         retorno 0
     fin
 fin
+
 // es codigo?
 funcion es_codigo(texto) 
     si(empieza_con(texto,'```') && termina_con(texto,'```'))
