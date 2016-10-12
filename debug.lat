@@ -1,8 +1,21 @@
-a = 'demo'
-
-
-si(a)
-    escribir("verdadero")
-sino
-    escribiro('falseo')
+funcion es_titulo(texto)
+    contador = 0
+    i = 0
+    mientras texto[i] == '#'        
+        contador++
+        i++
+    fin   
+    
+    si(contador < 7)
+        retorno contador
+    sino
+        retorno 0    
+    fin
+ 
 fin
+
+si(es_titulo('###n')== 1)
+    escribir('Es h1')
+fin
+
+

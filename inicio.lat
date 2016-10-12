@@ -1,52 +1,15 @@
 incluir('funciones.lat')
 
+texto = 'Documentacion de latino'
 
-texto = '#Documentacion de latino'
-
-
-contenido = leer_archivo('modelo_cabeza.html')
-
-tipo = "tachado"
-
-elegir(tipo)
-    caso 'h1':        
-        contenido .= '<h1>'.texto.'</h1>' 
-    caso 'h2':
-        contenido .= '<h2>'.texto.'</h2>' 
-    caso 'h3':
-        contenido .= '<h3>'.texto.'</h3>' 
-    caso 'h4':
-        contenido .= '<h4>'.texto.'</h4>' 
-    caso 'h5':
-        contenido .= '<h5>'.texto.'</h5>' 
-    caso 'h6':
-        contenido .= '<h6>'.texto.'</h6>' 
-    caso 'inclinado':
-        contenido .= '<i>'.texto.'</i>' 
-    caso 'grueso':
-        contenido .= '<b>'.texto.'</b>' 
-    caso 'subrayado':
-        contenido .= '<u>'.texto.'</u>' 
-    caso 'tachado': 
-        contenido .= '<strike>'.texto.'</strike>' 
-    caso 'cita': 
-        contenido .= '<blockquote>'.texto.'</blockquote>' 
-    caso 'linea':
-        contenido .= '<hr>' 
-    caso 'url':
-        contenido .= '<a href="url">web</a>' 
-    caso 'imagen':
-        contenido .= '<img src="foto.jpg">' 
-    caso 'codigo': 
-        contenido .= '<img src="foto.jpg">' 
-    defecto:
-        contenido .= '<p>'.texto.'</p>'
-fin
+tipo = tipo_contenido(texto)
 
 
 
-
-
+contenido  = leer_archivo('modelo_cabeza.html')
+contenido .= texto_formateado(texto,tipo)
 contenido .= leer_archivo('modelo_pie.html')
+
+escribir(contenido)
 
 escribir_archivo("doc.html",contenido)

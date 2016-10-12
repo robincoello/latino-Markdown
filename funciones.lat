@@ -2,17 +2,19 @@
 
 funcion tipo_contenido(texto)
 
-    // mientra no encuentre el tipo seguimos buscando
+    tipo = 'p'
 
-    tipo = 0    
-    mientras tipo < 200
-        
-        si(verificar_titulo(texto) ) 
-            tipo = verificar_titulo(texto) 
-        fin 
-        
-    fin
+    si(es_titulo(texto)==1) tipo = 'h1' fin
+    si(es_titulo(texto)==2) tipo = 'h2' fin
+    si(es_titulo(texto)==3) tipo = 'h3' fin
+    si(es_titulo(texto)==4) tipo = 'h4' fin
+    si(es_titulo(texto)==5) tipo = 'h5' fin
+    si(es_titulo(texto)==6) tipo = 'h6' fin
+    si(es_cita(texto))      tipo = 'cita' fin
+    si(es_linea(texto))     tipo = 'linea' fin
+       
     retorno tipo
+ 
 fin
 
 
@@ -23,98 +25,87 @@ fin
 // con esto cuento cuantas almoadillas tiene la frase al principio y entrego el resultado
 // si entrega de 1 a 6 es un header
 
-funcion verificar_titulo(texto)
+funcion es_titulo(texto)
     contador = 0
     i = 0
-    mientras texto[i] == '#'
+    mientras texto[i] == '#'        
         contador++
         i++
-    fin    
-    retorno contador
+    fin   
+    
+    si(contador < 7)
+        retorno contador
+    sino
+        retorno 0    
+    fin
+ 
 fin
 
 
 // cita
 // si hay una '>' al inicio es una cita
-funcion verificar_cita(texto)
-
+funcion es_cita(texto)
     si(empieza_con(texto,'>'))
-        retorno 1 // verdadero
+        retorno 1 
     sino
-        retorno 0 // falso
+        retorno 0 
     fin
 
 fin
 
 // linea
-// si hay trs lineas es una linea horizontal <hr>
-funcion verificar_linea(texto)
+// si hay tres lineas es una linea horizontal <hr>
+funcion es_linea(texto)
     si(empieza_con(texto,'---'))
-        retorno 1 // verdadero
-    sino
-        retorno 0 // falso
-    fin
-
-fin
-
-/*
-****************************************************
-/// lista 
-funcion verificar_lista(texto)
-l = longitud(texto)
-    si( ( texto[0] == '*'  && texto[l-1] != '*'  )
         retorno 1
     sino
         retorno 0
     fin
+
 fin
 
-// lista numerica
-funcion verificar_lista_numerica(texto)
-l = longitud(texto)
 
-    si( (texto[0] == '*' && texto[1] == '.' ) &&  texto[l-1] != '*' )
-        retorno 1
-    sino
-        retorno 0
+funcion texto_formateado(texto,tipo)
+
+contenido = ''
+
+    elegir(tipo)
+        caso 'h1':        
+            contenido .= '<h1>'.texto.'</h1>' 
+        caso 'h2':
+            contenido .= '<h2>'.texto.'</h2>' 
+        caso 'h3':
+            contenido .= '<h3>'.texto.'</h3>' 
+        caso 'h4':
+            contenido .= '<h4>'.texto.'</h4>' 
+        caso 'h5':
+            contenido .= '<h5>'.texto.'</h5>' 
+        caso 'h6':
+            contenido .= '<h6>'.texto.'</h6>' 
+        caso 'inclinado':
+            contenido .= '<i>'.texto.'</i>' 
+        caso 'grueso':
+            contenido .= '<b>'.texto.'</b>' 
+        caso 'subrayado':
+            contenido .= '<u>'.texto.'</u>' 
+        caso 'tachado': 
+            contenido .= '<strike>'.texto.'</strike>' 
+        caso 'cita': 
+            contenido .= '<blockquote>'.texto.'</blockquote>' 
+        caso 'linea':
+            contenido .= '<hr>'.texto.'' 
+        caso 'url':
+            contenido .= '<a href="url">web</a>' 
+        caso 'imagen':
+            contenido .= '<img src="foto.jpg">' 
+        caso 'codigo': 
+            contenido .= '<img src="foto.jpg">' 
+        caso 'p':
+            contenido .= '<p>'.texto.'</p>'
+        defecto:
+            contenido .= '<p>'.texto.'</p>'
     fin
+    
+    retorno contenido
+
 fin
-
-
-
-/// Inclinado 
-funcion verificar_inclinado(texto)
-
-f = longitud(texto)
-
-    si( (texto[0] == '*' && texto[1] != '*' ) && ( texto[f-1] == '*' && texto[f-2] != '*') )
-        retorno 1
-    sino
-        retorno 0
-    fin
-fin
-
-// Grueso
-funcion verificar_grueso(texto)
-
-l = longitud(texto)
-
-    si( (texto[0] == '*' && texto[1] == '*' ) && ( texto[l-1] == '*' && texto[l-2] == '*') )
-        retorno 1
-    sino
-        retorno 0
-    fin
-fin
-
-// subrayado
-funcion verificar_subrayado(texto)
-l = longitud(texto)
-
-    si( (texto[0] == '-' && texto[1] == '-' ) && ( texto[l-1] == '-' && texto[l-2] == '-' ) )
-        retorno 1
-    sino
-        retorno 0
-    fin
-fin
-
-*/
