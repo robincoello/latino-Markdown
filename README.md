@@ -84,6 +84,12 @@ latino inicio.lat
 
 Y se creara un archivo doc.html 
 
+##Modelos
 
+Puedes editar los ficheros modelos para tener un aspecto diferente para tu documentación
+
+*modelo.css
+*modelo_cabeza.html
+*modelo_pie.html
 
 
