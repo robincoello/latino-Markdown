@@ -13,12 +13,12 @@ Requiere
 Reglas
 
 
-# header 1
-## header 2
-### header 3
-#### header 4
-##### header 5
-######  header 6
+#header 1
+##header 2
+###header 3
+####header 4
+#####header 5
+######header 6
 
 Parrafo: es una linea de texto sin ningun caso 
 
@@ -30,7 +30,8 @@ __subrayado__
 
 > Una cita 
 
-codigo ```
+codigo ``` 
+ 
 
 ```
 
