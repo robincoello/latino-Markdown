@@ -1,0 +1,16 @@
+#!/usr/bin/latino
+incluir('funciones')
+
+funcion menu(a, b)
+	si ( a == 1 )
+		texto  = leer_archivo(b[0])
+		tipo = tipo_contenido(texto)
+		contenido  = leer_archivo('modelo_cabeza.html')
+		contenido .= texto_formateado(texto, tipo)
+		contenido .= leer_archivo('modelo_pie.html')
+		escribir(contenido)
+		escribir_archivo('doc.html', contenido)
+	sino
+		imprimir("ERROR: se requiere un archivo de entrada en un argumento.")
+	fin
+fin
