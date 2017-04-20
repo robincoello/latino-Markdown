@@ -6,7 +6,7 @@ adecuado ya sea para la web, pdf u otro.
 
 
 Requiere
-* Latino 
+* Latino 0.8.11
 
 
 ```
@@ -30,15 +30,7 @@ __subrayado__
 
 > Una cita 
 
-codigo ``` 
- 
 
-```
-
-
-
-
-```
 
 Lista sin numeros 
 *item1
@@ -62,16 +54,33 @@ Para crear una linea horizonta horizotal
 ---
 
 
+Un enlace
+
+```
 url
 [mande.ec](http://www.mande.ec)
+o basta con poner la direccion del sitio web
+http://www.mande.ec
 
-imagen
+```
+
+
+
+
+Una imagen, se puede poner enn dos opciones: 
+
+```
+1er opcion 
 ![Texto alternativo](http://www;mande.ec/imagen.jpg)
 
-Codigo 
-``` Codigo ``` 
-``` 
+o basta con poner la url de la imagen 
+http://www;mande.ec/imagen.jpg
+```
+
+Si se trata de un video suficiente con la direccio del video 
+```
 https://www.youtube.com/watch?v=NLPO-0rtD-o&feature=youtu.be
+```
 
 
 ##Instrucciones
