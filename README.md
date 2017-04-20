@@ -1,4 +1,4 @@
-#Este es un Markdown hecho con latino
+# Este es un Markdown hecho con latino
 
 La idea es escribir un texto de una forma simple y que el sistema lo transforme en un formato 
 adecuado ya sea para la web, pdf u otro.
@@ -47,17 +47,17 @@ Una cita
 Listas no numericas
 ```
 Lista sin numeros 
-*item1
-*item2
-*item3
-*item4
+* item1
+* item2
+* item3
+* item4
 ```
 
 Lista numerica
 ```
-1.item
-2.item
-3.item
++ item
++ item
++ item
 ```
 
 
@@ -130,15 +130,11 @@ latino crear.lat
 
 Y se creara un archivo doc.html 
 
-##Modelos
+## Modelos
 
 Puedes editar los ficheros modelos para tener un aspecto diferente para tu documentación
 
 * modelo.css
 * modelo_cabeza.html
 * modelo_pie.html
-
-1.- aaa
-2. 33
-3. c
 
