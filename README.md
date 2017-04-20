@@ -95,10 +95,10 @@ http://www.mande.ec
 
 
 
-Una imagen, se puede poner enn dos opciones: 
+Una imagen, se puede poner en dos formas: 
 
 ```
-![Texto alternativo](http://www;mande.ec/imagen.jpg)
+[Texto alternativo](http://www;mande.ec/imagen.jpg)
 ```
 
 También o basta con poner la url de la imagen 
@@ -117,7 +117,7 @@ https://www.youtube.com/watch?v=NLPO-0rtD-o&feature=youtu.be
 
 
 
-##Instrucciones
+## Instrucciones
 Escribir tu documentación en ```libro.lat``` (por el momento solo funciona textos de una sola linea
 
 Después ejecuta lo siguiente: 
@@ -138,4 +138,6 @@ Puedes editar los ficheros modelos para tener un aspecto diferente para tu docum
 * modelo_cabeza.html
 * modelo_pie.html
 
+1.- aaa
+2. 33
 
