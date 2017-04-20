@@ -82,9 +82,12 @@ Para crear una linea horizonta horizotal, tres guiones
 Un enlace
 
 ```
-url
 [mande.ec](http://www.mande.ec)
+```
+
 o basta con poner la direccion del sitio web
+
+```
 http://www.mande.ec
 
 ```
@@ -101,11 +104,12 @@ Una imagen, se puede poner enn dos opciones:
 También o basta con poner la url de la imagen 
 
 ```
-http://www;mande.ec/imagen.jpg
+http://www.mande.ec/imagen.jpg
 ```
 
 
-Si se trata de un video suficiente con la direccio del video (youtube), suficiente con poner la direccion 
+Si se trata de un video suficiente con la direccion del video (youtube), suficiente con poner la direccion 
+
 
 ```
 https://www.youtube.com/watch?v=NLPO-0rtD-o&feature=youtu.be
