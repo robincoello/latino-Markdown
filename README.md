@@ -4,6 +4,10 @@ Vamos a usar esta sintaxis
 
 https://guides.github.com/features/mastering-markdown/
 
+https://www.webpagefx.com/tools/emoji-cheat-sheet/
+
+
+
 
 La idea es escribir un texto de una forma simple y que el sistema lo transforme en un formato 
 adecuado ya sea para la web, pdf u otro.
