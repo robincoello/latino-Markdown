@@ -77,6 +77,25 @@ Para crear una linea horizonta horizotal, tres guiones
 ---
 ```
 
+Tambien 
+
+
+```
+- es un elemento de una lista 
+-- pone en gras las dos lineas 
+--- es una linea <hr>
+---- es una <hr> pero bien grueza
+----- (5 o mas)  es una <hr> bien gruza
+```
+Ver: 
+
+- es un elemento de una lista 
+-- pone en gras las dos lineas 
+--- es una linea <hr>
+---- es una <hr> pero bien grueza
+----- (5 o mas)  es una <hr> bien gruza
+
+
 
 
 Un enlace
