@@ -1,5 +1,10 @@
 # Este es un Markdown hecho con latino
 
+Vamos a usar esta sintaxis 
+
+https://guides.github.com/features/mastering-markdown/
+
+
 La idea es escribir un texto de una forma simple y que el sistema lo transforme en un formato 
 adecuado ya sea para la web, pdf u otro.
 
