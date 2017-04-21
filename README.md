@@ -87,15 +87,6 @@ Tambien
 ---- es una <hr> pero bien grueza
 ----- (5 o mas)  es una <hr> bien gruza
 ```
-Ver: 
-
-- es un elemento de una lista 
--- pone en gras las dos lineas 
---- es una linea <hr>
----- es una <hr> pero bien grueza
------ (5 o mas)  es una <hr> bien gruza
-
-
 
 
 Un enlace
@@ -156,4 +147,11 @@ Puedes editar los ficheros modelos para tener un aspecto diferente para tu docum
 * modelo.css
 * modelo_cabeza.html
 * modelo_pie.html
+
+
+
+
+
+
+
 
