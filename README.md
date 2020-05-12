@@ -2,6 +2,10 @@
 
 Vamos a usar esta sintaxis 
 
+https://daringfireball.net/projects/markdown/
+
+
+
 https://guides.github.com/features/mastering-markdown/
 
 https://www.webpagefx.com/tools/emoji-cheat-sheet/
