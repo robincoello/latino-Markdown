@@ -13,12 +13,12 @@ regular paragraph.
 The quick brown fox jumped over the lazy
 dog's back.
 
-# This is an <h1> tag
-## This is an <h2> tag
+# Es un h1
+## h2
 ### Header 3
 #### Header 4
 ##### Header 5
-###### This is an <h6> tag
+###### h6
 
 
 
@@ -237,3 +237,16 @@ you've got to put paragraph tags in your blockquotes:</p>
     &lt;p&gt;For example.&lt;/p&gt;
 &lt;/blockquote&gt;
 </code></pre>
+
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+```
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+```
