@@ -21,6 +21,19 @@ dog's back.
 ###### h6
 
 
+```
+
+#a
+
+# a
+
+```
+
+
+#a
+
+# a
+
 
 
 
@@ -239,7 +252,7 @@ you've got to put paragraph tags in your blockquotes:</p>
 </code></pre>
 
 
-#First Header                | Second Header
+# First Header                | Second Header
 ------------                | -------------
 Content from cell 1         | Content from cell 2
 Content in the first column | Content in the second column
